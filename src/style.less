@@ -1,0 +1,54 @@
+// Temporary fix hot reload issue: https://github.com/facebook/create-react-app/issues/11771#issuecomment-1017125835
+body > iframe[style*="2147483647"]:not([id="webpack-dev-server-client-overlay"]) {
+  display: none;
+}
+
+.post-table .ant-table-pagination {
+  margin-right: 16px;
+}
+
+.hidden-expanded {
+  display: none;
+}
+.ant-layout-sider-collapsed {
+  .hidden-collapsed {
+    display: none;
+  }
+  .hidden-expanded {
+    display: block;
+  }
+}
+
+.ant-select-selection-item .ant-avatar {
+  width: 24px;
+  height: 24px;
+  margin-top: -4px;
+}
+
+div.ant-popover-inner-content {
+  padding: 0;
+}
+
+.ant-popconfirm div.ant-popover-inner-content {
+  padding: 12px 16px;
+}
+
+.cover-upload .ant-upload {
+  width: 180px;
+}
+
+.ant-table-cell-fix-left {
+  box-shadow: 4px 0 6px -1px rgb(0 0 0 / 10%), 2px 0 4px -2px rgb(0 0 0 / 10%);
+}
+
+.ant-table-cell-fix-right {
+  box-shadow: -4px 0 6px -1px rgb(0 0 0 / 10%), -2px 0 4px -2px rgb(0 0 0 / 10%);
+}
+
+.emoji-picker-react .emoji-group:before {
+  text-align: left;
+}
+
+.ant-upload-list-item-image {
+  object-fit: contain;
+}
